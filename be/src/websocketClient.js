@@ -38,6 +38,6 @@ function connectWebSocket(wsUrl, db, WebSocket) {
   });
 }
 
-connectWebSocket(process.env.WS_URL, db, require('ws'));
+connectWebSocket(wsUrl, db, require('ws'));
 
 module.exports = connectWebSocket;
